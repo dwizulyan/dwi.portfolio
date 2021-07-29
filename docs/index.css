@@ -25,9 +25,9 @@ html{
 }
 .link{
 	z-index: 1;
-	position: relative;
+	position: absolute;
 	width: 50%;
-	margin-left: -200px;
+	left: -70%;
 	flex-direction: column;
 	background: black;
 	height: 100vh;
