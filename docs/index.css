@@ -8,10 +8,25 @@ html{
 	scroll-behavior: smooth;
 }
 .navbar{
+	display: flex;
+	align-items: center;
 	position: relative;
 	width: 90%;
 	margin: 0px auto;
 	height: 10vh;
+}
+.navbar .nametagDef{
+	color: black;
+	text-decoration: none;
+
+}
+.navbar h1{
+	font-size: 26px;
+	letter-spacing:10px;
+	font-family: 'poppins',sans-serif;
+}
+.navbar .nm{
+	font-weight: 200;
 }
 .hamburger{
 	cursor: pointer;
@@ -26,8 +41,9 @@ html{
 .link{
 	z-index: 1;
 	position: absolute;
-	width: 50%;
-	left: -70%;
+	top: 0;
+	width: 80%;
+	left: -91%;
 	flex-direction: column;
 	background: black;
 	height: 100vh;
@@ -38,9 +54,9 @@ html{
 }
 .link-content{
 	width: 100%;
-	margin-top: 50px;
+	margin-top:20px;
 	position: relative;
-	height: 15vh;
+	height: 20vh;
 	justify-content: space-around;
 	flex-direction: column;
 	display: flex;
@@ -49,20 +65,26 @@ html{
 .social-link li a{
 	font-size: 30px;
 }
+.nametag{
+	color: white;
+	text-decoration: none;
+	margin: 35px auto;
+}
 .link li a{
 	text-decoration: none;
-	font-weight: 500;
+	font-weight: 200;
 	color: white;
 	font-family: 'poppins',sans-serif;
 }
 .social {
-	height: 70vh;
-	width: 100%;text-align: center;
+	height: 60vh;
+	width: 100%;
+	text-align: center;
 	color: white;
 }
 .social h1{
 	font-family: 'poppins',sans-serif;
-	font-weight: 800;
+	font-weight: 300;
 	font-size: 30px;
 }
 .hero h1{
