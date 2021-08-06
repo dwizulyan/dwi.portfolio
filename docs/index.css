@@ -42,8 +42,8 @@ html{
 	z-index: 1;
 	position: absolute;
 	top: 0;
-	width: 80%;
-	left: -91%;
+	width: 85%;
+	left: -95%;
 	flex-direction: column;
 	background: black;
 	height: 100vh;
@@ -187,5 +187,10 @@ html{
 	}
 	.head{
 		width: 33%;
+	}
+}
+@media screen and (max-width: 380px){
+	.hero h1{
+		font-size: 65px;
 	}
 }

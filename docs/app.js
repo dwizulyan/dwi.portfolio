@@ -4,7 +4,7 @@ function clickFunction(){
 	var name = document.getElementById("nametag");
 	console.log('success!!')
 	if(link.style.left === '-6%'){
-		link.style.left = '-90%';
+		link.style.left = '-95%';
 	}
 	else{
 		link.style.left = '-6%';
@@ -14,7 +14,7 @@ function clickFunction(){
 var clickLink = document.querySelectorAll(".c");
 for( var click of clickLink){
 	click.addEventListener('click',function(){
-		link.style.left = '-90%';
+		link.style.left = '-95%';
 	})
 }
 
