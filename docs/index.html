@@ -6,6 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Lian</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<link rel="stylesheet" href="index.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,6 +22,7 @@
 			<a class="nametag" href=""><h1 id="nametag">CODED<span class="nm">BYDWI</span></h1></a>
 			<div class="link-content">
 			<li><a onclick = "change()" class="c" href="#profile">Profile</a></li>
+			<li><a onclick = "change()" class="c" href="#">Project</a></li>
 			<li><a onclick = "change()" class="c" href="#skills">Skills</a></li>
 			</div>
 			<div class="social">
@@ -42,15 +44,15 @@
 		<p>Still in Highschool but am not a Fool, tryna be Cool like J. Cole</p>
 		</div>
 	</div>
-	<div class="profile" id="profile">
-		<div class="profile-content">
+	<div class="profile" id="profile"data-aos="fade-up">
+		<div class="profile-content" >
 			<h1>Profile Ku</h1>
 			<p>
 				Dwi Zulyan Hamid, nama lengkap saya. Anak ke dua dari tiga bersaudara Lahir 23 Juli 2005, saya sekolah di SMKN 1 Udanawu, Kelas 11 mencoba mendalami Web Development di Jurusan TKJ 
 			</p>
 		</div>
 	</div>
-	<div class="skills" id="skills">
+	<div class="skills" id="skills" data-aos="fade-right">
 		<div class="skill-content">
 			<h1>Skill Saya</h1>
 			<ul class="list">
@@ -154,5 +156,9 @@
 		<p>Created at 27 - july - 2021<br>By Dwi Zulyan Hamid</p>
 	</div>
 	<script src="app.js"></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+ 	 <script>
+    AOS.init();
+  	</script>
 </body>
 </html>
