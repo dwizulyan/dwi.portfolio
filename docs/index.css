@@ -7,6 +7,12 @@
 html{
 	scroll-behavior: smooth;
 }
+::-webkit-scrollbar	{
+	width: 5px;
+}
+::-webkit-scrollbar-thumb{
+	background: black;
+}
 .navbar{
 	display: flex;
 	align-items: center;
@@ -163,7 +169,46 @@ html{
 	margin-left: 5px;
 	font-size: 25px;
 }
-
+.project{
+	width: 100%;
+	height:max-content;
+}
+.project h1{
+	text-align: center;
+	font-family: 'poppins',sans-serif;
+	font-size: 46px;
+	font-weight: 800;
+	padding: 100px 0px 0px 0px;
+}
+.isi-project img{
+	width: 100%;
+}
+.project-wrap{
+	display: flex;
+	width: 70%;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 50px auto;
+}
+.isi-project{
+	font-family: 'poppins',sans-serif;
+	display: relative;
+	width: 100%;
+	height: max-content;
+	margin: 25px 0px;
+}
+.isi-project p{
+	font-weight: 300;
+}
+.visit{
+	margin: 10px 0px;
+	padding: 5px 20px;
+	border: none;
+	border-radius: 100px;
+	background: black;
+	color: white;
+	font-family: 'poppins',sans-serif;
+}
 .footer{
 	color: white;
 	width: 100%;
@@ -188,9 +233,11 @@ html{
 	.head{
 		width: 33%;
 	}
+	
 }
 @media screen and (max-width: 380px){
 	.hero h1{
 		font-size: 65px;
 	}
+
 }
