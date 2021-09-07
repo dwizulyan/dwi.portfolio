@@ -96,12 +96,13 @@ html{
 .hero h1{
 	font-family: "poppins",sans-serif;
 	font-weight: 800;
-	font-size: 70px;
+	font-size: 80px;
 	letter-spacing: 1px;
-	line-height: 80px;
+	line-height: 90px;
 }
 .hero .head{
 	padding-top: 100px;
+	
 }
 .hero{
 	height: 79vh;
@@ -122,6 +123,10 @@ html{
 	margin: 0px auto 0px auto;
 	text-align: center;
 }
+.profile-content{
+	max-width: 400px;
+	margin: 0px auto;
+}
 .profile-content p{
 	font-size: 20px;
 	font-weight: 200;
@@ -133,16 +138,20 @@ html{
 	font-family: 'poppins',sans-serif;
 }
 .skills{
-	display: flex;
+	
 	align-items: center;
-	height: 100vh;
+	height: max-content;
 	width: 90%;
 	margin: 0px auto;
 }
 .skill-content{
-	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 80%;
+	margin: 0px auto;
 }
-.skill-content h1{
+.skills h1{
 	text-align: center;
 	font-weight: 800;
 	font-family: "poppins",sans-serif;
@@ -158,16 +167,30 @@ html{
 	list-style: none;
 }
 .list li{
+	border-radius: 20px;
 	display: flex;
-	padding:20px 0px;
-	width: max-content;
-	justify-content: space-between;
+	align-items: center;
+	justify-content: center;
+	width: 300px;
+	height: 400px;
+	box-shadow: 0px 1px 20px 0px #545454;
+	margin: 30px auto;
 }
 .list li p{
-	font-weight: 400;
+	color: white;
+	font-weight: 800;
 	font-family: "poppins",sans-serif;
 	margin-left: 5px;
-	font-size: 25px;
+	font-size: 50px;
+}
+.li:nth-child(1){
+	background: rgb(230,84,29);
+}
+.li:nth-child(2){
+	background: #EAD41C;
+}
+.li:nth-child(3){
+	background: #228AC2;
 }
 .project{
 	width: 100%;
@@ -181,7 +204,9 @@ html{
 	padding: 100px 0px 0px 0px;
 }
 .isi-project img{
-	width: 100%;
+	display: block;
+	margin: 0px auto;
+	width:100%;
 }
 .project-wrap{
 	display: flex;
@@ -193,9 +218,9 @@ html{
 .isi-project{
 	font-family: 'poppins',sans-serif;
 	display: relative;
-	width: 100%;
+	width: 70%;
 	height: max-content;
-	margin: 25px 0px;
+	margin: 25px auto;
 }
 .isi-project p{
 	font-weight: 300;
@@ -225,19 +250,33 @@ html{
 	font-family: 'poppins',sans-serif;
 }
 
-@media screen and (min-width :500px){
+@media screen and (max-width: 801px){
+	.head{
+		width: 34%;
+	}
+}
+@media screen and (max-width :800px){
 	.hero h1{
 		font-size: 80px;
 		line-height: 90px;
 	}
 	.head{
-		width: 33%;
+		width: 65%;
 	}
 	
 }
-@media screen and (max-width: 380px){
+@media screen and (max-width: 428px){
 	.hero h1{
-		font-size: 65px;
+		font-size: 55px;
+		line-height: 60px;
+	}
+	.head{
+		width: 75%;
 	}
 
+}
+@media screen and (max-width : 312px){
+	.nametagDef{
+		display: none;
+	}
 }
